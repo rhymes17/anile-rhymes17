@@ -1,13 +1,61 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: rgba(64,67,74, 0.1);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+section{
+  margin: 1rem auto;
+  width: 90%;
+  border: 1px solid transparent;
+  background: whitesmoke;
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.btn{
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0.6rem;
+  background: black;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 2rem;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid transparent;
+  resize: none;
+  color: black;
 }
